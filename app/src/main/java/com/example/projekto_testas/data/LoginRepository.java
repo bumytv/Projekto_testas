@@ -24,6 +24,7 @@ public class LoginRepository {
     public static LoginRepository getInstance(LoginDataSource dataSource) {
         if (instance == null) {
             instance = new LoginRepository(dataSource);
+            int ok_dud = 10;
         }
         return instance;
     }
